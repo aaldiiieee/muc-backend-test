@@ -11,3 +11,4 @@ Route::post('/employees/add-employee', [EmployeeController::class, 'store']);
 
 Route::get('/tasks/get-tasks', [TaskController::class, 'index']);
 Route::post('/tasks/add-task', [TaskController::class, 'store']);
+Route::delete('/tasks/delete-task/{id}', [TaskController::class, 'destroy']);
